@@ -1,0 +1,67 @@
+body{
+	font-size: 40px;
+	font-family: Tahoma;
+}
+#BigBox{
+    margin: auto;
+    width: 100px;
+}
+.BoxA{
+	width: 100px;
+	height: 100px;
+	background-color: #dfe1e7;
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: #687291;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.BoxB{
+	width: 100px;
+	height: 100px;
+	background-color: #eeeff2;
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: #687291;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.BoxC{
+	width: 100px;
+	height: 100px;
+	background-color: #dfe1e7;
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: #687291;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.BoxD{
+	width: 100px;
+	height: 100px;
+	background-color: #eeeff2;
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: #687291;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.BoxE{
+	width: 100px;
+	height: 100px;
+	background-color: #dfe1e7;
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: #687291;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.BoxF{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #687291;
+	text-align: center;
+	border: 4px solid black; 
+    margin: auto;
+}

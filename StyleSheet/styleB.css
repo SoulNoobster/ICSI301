@@ -1,0 +1,101 @@
+body{
+	font-size: 40px;
+	font-family: Tahoma;
+}
+#BigBox{
+	display: flex; 
+	flex-direction: row;
+    height: 150px;
+}
+.BoxA{
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxA:hover{
+	background-color: yellow;
+	color: goldenrod;
+}
+
+.BoxB{
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxB:hover{
+	background-color: yellow;
+	color: goldenrod;
+}
+
+.BoxC{
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxC:hover{
+	background-color: yellow;
+	color: goldenrod;
+}
+
+.BoxD{
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxD:hover{
+	background-color: yellow;
+	color: goldenrod;
+}
+
+.BoxE{
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxE:hover{
+	background-color: yellow;
+	color: goldenrod;
+}
+
+.BoxF{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 90px;
+	height: 140px;
+	background-color: #eeeff2;
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxF:hover{
+	background-color: yellow;
+	color: goldenrod;
+}

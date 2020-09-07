@@ -1,0 +1,105 @@
+body{
+	font-size: 40px;
+	font-family: Tahoma;
+}
+#BigBox{
+	display: flex; 
+	flex-direction: row;
+    height: 150px;
+}
+.BoxA{
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: height 5s;
+}
+
+.BoxA:hover{
+	height: 500px;
+	color: #F7819F;
+}
+
+.BoxB{
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: height 5s;
+}
+
+.BoxB:hover{
+	height: 500px;
+	color: #F7819F;
+}
+
+.BoxC{
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: height 5s;
+}
+
+.BoxC:hover{
+	height: 500px;
+	color: #F7819F;
+}
+
+.BoxD{
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: height 5s;
+}
+
+.BoxD:hover{
+	height: 500px;
+	color: #F7819F;
+}
+
+.BoxE{
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: height 5s;
+}
+
+.BoxE:hover{
+	height: 500px;
+	color: #F7819F;
+}
+
+.BoxF{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 90px;
+	height: 140px;
+	background-image: linear-gradient(#EB3349, #F45C43);
+	border-left: 10px dotted #D0D0FF;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.BoxF:hover{
+	color: #F7819F;
+}
