@@ -1,0 +1,31 @@
+php 
+
+apache or nginx server
+
+php -> framework larvavel or symfony
+
+-----------
+
+vuejs, react, angular
+
+nodejs server
+javascript
+
+Mongo
+Expressjs
+Reactjs
+Nodejs
+
+
+
+Unelgee
+-------
+yavts - 10
+etssiin shalgalt - 20
+
+lab - 60
+irts/idevhi - 10
+
+Бичлэг дээр та эдгээр даалгаварыг хийж гүйцэтгэ гэцэн байгаа биздээ ?
+Англи doc фиал байгаа биздээ гүй юу ?
+За ойлголоо багшаа миний буруу байсан байна.
