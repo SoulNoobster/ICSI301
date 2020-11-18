@@ -7,10 +7,11 @@
 
 // We assume these symbols will be globally defined by the user. These var statements
 // will assign undefined to the symbol if it isn't global already.
-// These global symbols are needed to test your file and you don't have to worry about them for Problem 3.
 var cs142MakeMultiFilter;
 var Cs142TemplateProcessor;
 
+
+let anon = function() {
 
 // Result message for Problems 1-3
 var p1Message = 'SUCCESS';
@@ -52,7 +53,7 @@ if (typeof cs142MakeMultiFilter !== 'function') {
         p1Message = 'FAILURE';
     } else {
         var result = filterFunc();
-        if (!arraysAreTheSame([1, 2, 3], result)) {
+        if (!arraysAreTheSame(originalArray, result)) {
             console.error('filter function with no args does not return the original array' , result);
             p1Message = 'FAILURE';
         }
@@ -66,7 +67,7 @@ if (typeof cs142MakeMultiFilter !== 'function') {
                 console.error('filter function callback does not filter 2 correctly' , callbackResult);
                 p1Message = 'FAILURE';
             }
-            if (!arraysAreTheSame([1, 2, 3], this)) {
+            if (!arraysAreTheSame(originalArray, this)) {
                 console.error('filter function callback does not pass original array as this' , this);
                 p1Message = 'FAILURE';
             }
@@ -102,10 +103,6 @@ if (typeof cs142MakeMultiFilter !== 'function') {
                 console.error('second filter does not filter 1 (check for global variable usage)' , callbackResult);
                 p1Message = 'FAILURE';
             }
-            if (!arraysAreTheSame([1, 2, 3, 4], this)) {
-                console.error('filter function callback does not pass original array as this' , this);
-                p1Message = 'FAILURE';
-            }
         });
 
     }
@@ -127,7 +124,7 @@ if (typeof Cs142TemplateProcessor !== 'function') {
     var dictionary = {month: 'July', day: '1', year: '2016'};
     var str = dateTemplate.fillIn(dictionary);
 
-    if (str !== 'My favorite month is July but not the day 1 or the year 2016') {
+    if (str !== 'My favorite month is July but not the day 13 or the year 2016') {
         console.error('Cs142TemplateProcessor didn\'t work');
         p2Message = 'FAILURE';
     }
@@ -164,3 +161,32 @@ window.onload = function () {
     document.getElementById("cs142p2").innerHTML = p2Message;
     document.getElementById("cs142p3").innerHTML = p3Message;
 };
+};
+
+function Freind(){
+        this.arrive=function(){
+            consol.log("Hello");
+        };
+    }
+    var friend1 = new Freind();
+    var friend2 = new Freind();
+    friend2.arrive = funciton(){
+        console.log("Hi");
+    };
+    friend1.arrive();
+    friend2.arrive();
+
+    Freind.prototype.leave = function() {
+        console.log("Bye");
+    };
+    friend1.leave();
+    friend2.leave();
+    var friend3 = new Freind();
+    friend3.leave();
+    friend3.leave = function (){
+        console.log("Adieu");
+    };
+    friend3.leave();
+    friend2.leave();
+
+anon();

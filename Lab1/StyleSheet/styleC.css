@@ -6,6 +6,7 @@ body{
 	display: flex; 
 	flex-direction: row;
     height: 150px;
+    min-width: 100vh
 }
 .BoxA{
 	width: 90px;
