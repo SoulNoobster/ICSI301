@@ -1,6 +1,7 @@
 import React from 'react';
 import './Example.css';
 
+import Header from "../header/Header"
 /*
   Since this component shows code we include the https://prismjs.com/
   formatter. We invoke it by labelling code blocks with class="language-jsx"
@@ -35,6 +36,7 @@ class Example extends React.Component {
     // generate new functions that handle the event by just calling
     // the method that handles the event.
     this.handleChangeBound = event => this.handleChange(event);
+    this.handleChangeBound2 = event => this.handleChange2(event);
     // Note: A commmon idiom in React code is to use JavaScript bind() to
     // smash the method to accomplish this passthrough to the method:
     //      this.handleChange = this.handleChange.bind(this);
@@ -70,6 +72,9 @@ class Example extends React.Component {
   handleChange(event) {
     this.setState({ inputValue: event.target.value });
   }
+  handleChange2(event) {
+    this.setState({ motto: event.target.value });
+  }
 
   // Method called when the button is pushed
   /* eslint-disable-next-line no-unused-vars */
@@ -102,14 +107,19 @@ class Example extends React.Component {
   render() {
     return (
       <div className="container Example">
+
+        <Header/>
+        
         <h1>CS142 Project#4 React.js Example</h1>
 
         <div className="motto-update">
           <p>My name is "{this.state.name}".</p>
+          
           <p>My motto is "{this.state.motto}".</p>
+          
           <div className="cs142-example-output">
           <label htmlFor="inMotto">Input Field:</label>
-          <input id="inMotto" type="text" value={this.state.inputvalue} onChange={this.handleChangeBound} />
+          <input id="inMotto" type="text" value={this.state.motto} onChange={this.handleChangeBound2} />
         </div>
         </div>
 
