@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import {
   Divider,
   List,
@@ -15,32 +16,38 @@ import './userList.css';
 class UserList extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      List:[]
+    }
   }
-
+  componentDidMount() {
+    fetch('/user/list').then(response => response.json()).then(data => this.setState({
+      List: data
+    }));
+  }
   render() {
     return (
       <div>
         <Typography variant="body1">
-          This is the user list, which takes up 3/12 of the window.
-          You might choose to use <a href="https://material-ui.com/demos/lists/">Lists</a> and <a href="https://material-ui.com/demos/dividers">Dividers</a> to
-          display your users like so:
+          Friend List (Fake Cool Friends)
         </Typography>
-        <List component="nav">
-          <ListItem>
-            <ListItemText primary="Item #1" />
-          </ListItem>
-          <Divider />
-          <ListItem>
-            <ListItemText primary="Item #2" />
-          </ListItem>
-          <Divider />
-          <ListItem>
-            <ListItemText primary="Item #3" />
-          </ListItem>
-          <Divider />
+        <List component="nav">{
+          this.state.List.map((el, ind) => {
+            return (
+              <Link key={ind} to={`/users/${el._id}`}>
+                <ListItem>
+                  <ListItemText primary={`${el.first_name} ${el.last_name}`} />
+                </ListItem>
+                <Divider/>
+              </Link>
+            )
+          })
+        }
         </List>
         <Typography variant="body1">
-          The model comes in from window.cs142models.userListModel()
+          <Link to="/users">
+            See All Users
+          </Link>
         </Typography>
       </div>
     );
